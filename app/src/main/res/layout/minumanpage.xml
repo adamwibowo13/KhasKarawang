@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".minumanpage"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Pilihan Minuman"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutm1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="77dp">
+
+        <ImageView
+            android:id="@+id/jahe1"
+            android:layout_width="112dp"
+            android:layout_height="79dp"
+            android:src="@drawable/gbrminuman" />
+
+        <TextView
+            android:id="@+id/sarijahe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Sari Jahe"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/jahe1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ketjahe1"
+            android:layout_width="242dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="     baku yang segar dan terjamin rasa dan keenakannya!harga yang murah dengan kualitas dan mutu yang terjamin."
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/jahe1"
+            app:layout_constraintTop_toBottomOf="@+id/sarijahe1" />
+
+        <ImageButton
+            android:id="@+id/keranjangmp1"
+            android:layout_width="28dp"
+            android:layout_height="31dp"
+            android:onClick="addkeranjangmp1"
+            android:src="@drawable/keranjang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ketjahe1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Rp. 7.000"
+            app:layout_constraintStart_toEndOf="@+id/jahe1"
+            app:layout_constraintTop_toBottomOf="@+id/ketjahe1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search4"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bggreycolour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Cari disini.."
+        app:iconifiedByDefault="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

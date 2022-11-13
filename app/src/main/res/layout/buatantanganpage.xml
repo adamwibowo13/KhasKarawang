@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buatantanganpage"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Pilihan Barang Handmade"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayouttas1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:layout_editor_absoluteX="77dp">
+
+        <ImageView
+            android:id="@+id/gmbrtas1"
+            android:layout_width="112dp"
+            android:layout_height="79dp"
+            android:src="@drawable/gmbrtas" />
+
+        <TextView
+            android:id="@+id/texttas1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Tas Rajut"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/gmbrtas1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="249dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="      Harga yang murah dengan kualitas dan mutu yang terjamin. membuat syle lebih clasic namun tetap modern."
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/gmbrtas1"
+            app:layout_constraintTop_toBottomOf="@+id/texttas1" />
+
+        <ImageButton
+            android:id="@+id/keranjang51"
+            android:layout_width="28dp"
+            android:layout_height="31dp"
+            android:src="@drawable/keranjang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Rp. 20.000"
+            app:layout_constraintStart_toEndOf="@+id/gmbrtas1"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search4"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bggreycolour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Cari disini.."
+        app:iconifiedByDefault="false"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

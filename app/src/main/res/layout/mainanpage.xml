@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainanpage"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Pilihan Mainan"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayouttoys1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/gmbrgasing1"
+            android:layout_width="112dp"
+            android:layout_height="79dp"
+            android:src="@drawable/gmbrgasing" />
+
+        <TextView
+            android:id="@+id/textgasing1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Gasing"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/gmbrgasing1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="237dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="      harga yang murah dengan kualitas dan mutu yang terjamin. mengenal mainan jaman dulu yang asik dan menyenangkan"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/gmbrgasing1"
+            app:layout_constraintTop_toBottomOf="@+id/textgasing1" />
+
+        <TextView
+            android:id="@+id/hargagasing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Rp. 10.000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/gmbrgasing1"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <ImageButton
+            android:id="@+id/keranjangmp41"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/keranjang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search4"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bggreycolour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Cari disini.."
+        app:iconifiedByDefault="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

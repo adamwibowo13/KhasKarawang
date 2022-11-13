@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".snackpage"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/judulsnackpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Pilihan Snack"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutsnack1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/judulsnackpage"
+        tools:layout_editor_absoluteX="77dp">
+
+        <ImageView
+            android:id="@+id/gmbropak1"
+            android:layout_width="112dp"
+            android:layout_height="79dp"
+            android:src="@drawable/gmbropak" />
+
+        <TextView
+            android:id="@+id/textopak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Opak"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/gmbropak1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="252dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="     Bahan baku yang segar dan terjamin rasa dan keenakannya!harga yang murah dengan kualitas dan mutu yang terjamin."
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/gmbropak1"
+            app:layout_constraintTop_toBottomOf="@+id/textopak" />
+
+        <ImageButton
+            android:id="@+id/keranjangmp31"
+            android:layout_width="28dp"
+            android:layout_height="31dp"
+            android:src="@drawable/keranjang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Rp. 10.000"
+            app:layout_constraintStart_toEndOf="@+id/gmbropak1"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search4"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bggreycolour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Cari disini.."
+        app:iconifiedByDefault="false"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
